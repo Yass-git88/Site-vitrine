@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Fougère — Fleuriste artisan à Lyon</title>
+  <meta name="description" content="La Fougère, fleuriste artisan à Lyon. Bouquets sur-mesure, livraison express, mariage et événements. Fleurs locales et de saison."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ════ NAV ════ -->
+<header>
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <a href="index.html" class="nav-logo" aria-label="La Fougère – Accueil">
+      <span class="nav-logo-leaf" aria-hidden="true"></span>
+      <span class="nav-logo-text">La Fougère</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="pages/catalogue.html">Catalogue</a></li>
+      <li><a href="pages/apropos.html">À propos</a></li>
+      <li><a href="pages/services.html">Services</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+33555001234" class="nav-phone">05 55 00 12 34</a>
+      <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-menu" aria-label="Menu mobile">
+    <a href="index.html">Accueil</a>
+    <a href="pages/catalogue.html">Catalogue</a>
+    <a href="pages/apropos.html">À propos</a>
+    <a href="pages/services.html">Services</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="tel:+33555001234" style="font-size:1rem;font-family:var(--sans);color:var(--sauge);">05 55 00 12 34</a>
+  </nav>
+</header>
+
+<main class="page-content">
+
+  <!-- ════ HERO ════ -->
+  <section class="hero" aria-label="Bienvenue">
+    <div class="hero-left">
+      <span class="eyebrow">Fleuriste artisan · Lyon</span>
+      <h1 class="hero-title">
+        Des fleurs qui<br/>
+        racontent <em>votre</em><br/>
+        histoire
+      </h1>
+      <p class="hero-desc">
+        Bouquets sur-mesure, compositions florales, livraison express — chaque création est unique, imaginée avec soin et respect du vivant.
+      </p>
+      <div class="hero-actions">
+        <a href="pages/catalogue.html" class="btn btn-primary">Voir le catalogue</a>
+        <a href="pages/contact.html" class="btn btn-outline">Commander un bouquet</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num">8+</span>
+          <span class="hero-stat-label">Ans de passion</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">2 400</span>
+          <span class="hero-stat-label">Créations livrées</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">100%</span>
+          <span class="hero-stat-label">Local & de saison</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1554196259-e3c00b41a421?w=900&auto=format&fit=crop&q=80"
+        alt="Fleuriste composant un bouquet artisanal"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="hero-badge">
+        <span class="hero-badge-text">« Avec amour & savoir-faire »</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ STRIP ════ -->
+  <div class="features-strip" aria-label="Nos engagements">
+    <div class="feature-item">
+      <span class="feature-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="none"/><path d="M8 12s1-4 4-4 4 4 4 4-1 4-4 4-4-4-4-4z"/></svg></span>
+      Fleurs locales &amp; de saison
+    </div>
+    <div class="feature-item">
+      <span class="feature-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 4v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
+      Livraison express 3h
+    </div>
+    <div class="feature-item">
+      <span class="feature-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+      Creation sur-mesure
+    </div>
+    <div class="feature-item">
+      <span class="feature-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+      Zero pesticide
+    </div>
+  </div>
+
+  <!-- ════ APERÇU CATALOGUE ════ -->
+  <section class="section catalogue-section" aria-labelledby="catalogue-title">
+    <div class="section-center fade-up">
+      <span class="eyebrow">Nos créations</span>
+      <h2 class="section-title-xl" id="catalogue-title">Le catalogue<br/><em style="font-style:italic;color:var(--sauge)">de saison</em></h2>
+      <p class="section-sub">Fleurs fraîches, livrées chaque matin depuis nos producteurs locaux.</p>
+    </div>
+
+    <div style="display:flex;justify-content:center;margin-top:48px;" class="fade-up">
+      <a href="pages/catalogue.html" class="btn btn-outline">Voir toutes nos créations</a>
+    </div>
+
+    <div class="products-grid" style="margin-top:56px;">
+      <article class="product-card fade-up">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=600&auto=format&fit=crop&q=80" alt="Bouquet Aurore" loading="lazy"/>
+          <span class="product-tag">Nouveau</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Bouquet Aurore</h3>
+          <p class="product-desc">Roses, pivoines, eucalyptus — tons rosés et crème</p>
+          <div class="product-footer">
+            <span class="product-price">48 €</span>
+            <button class="product-action" aria-label="Commander le Bouquet Aurore">Commander</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card fade-up">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1558879860-45f24b366ea1?w=600&auto=format&fit=crop&q=80" alt="Composition Prairie" loading="lazy"/>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Composition Prairie</h3>
+          <p class="product-desc">Fleurs sauvages, renoncules, marguerites — vase en terre cuite</p>
+          <div class="product-footer">
+            <span class="product-price">72 €</span>
+            <button class="product-action" aria-label="Commander la Composition Prairie">Commander</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card fade-up">
+        <div class="product-img">
+          <img src="https://images.unsplash.com/photo-1560881088-30da8d6e1378?w=600&auto=format&fit=crop&q=80" alt="Gerbe Soleil — tournesols et feuillages verts" loading="lazy"/>
+          <span class="product-tag">Best-seller</span>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Gerbe Soleil</h3>
+          <p class="product-desc">Tournesols, statices, feuillages verts — énergie et joie</p>
+          <div class="product-footer">
+            <span class="product-price">35 €</span>
+            <button class="product-action" aria-label="Commander la Gerbe Soleil">Commander</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ════ APERÇU À PROPOS ════ -->
+  <div class="apropos-preview">
+    <div class="apropos-img-col">
+      <img
+        src="https://images.unsplash.com/photo-1584461730592-5bfab6460bae?w=900&auto=format&fit=crop&q=80"
+        alt="Atelier La Fougère"
+        loading="lazy"
+      />
+    </div>
+    <div class="apropos-text-col fade-up">
+      <span class="eyebrow">Notre histoire</span>
+      <h2 class="section-title-xl">Marianne &amp; les fleurs,<br/><em style="font-style:italic;color:var(--sauge)">une vie de passion</em></h2>
+      <p class="section-sub">
+        Depuis 2016, La Fougère est un atelier floral indépendant niché au cœur de Lyon. Marianne, fleuriste certifiée et ancienne botaniste, compose chaque bouquet avec une attention particulière portée aux saisons, aux textures et aux fragrances.
+      </p>
+      <div style="margin-top:36px;">
+        <a href="pages/apropos.html" class="btn-ghost">Découvrir notre histoire</a>
+      </div>
+      <div class="apropos-signature">— Marianne Lefèvre, fondatrice</div>
+    </div>
+  </div>
+
+  <!-- ════ SERVICES APERÇU ════ -->
+  <section class="section services-section" aria-labelledby="services-title">
+    <div class="section-center fade-up">
+      <span class="eyebrow">Ce que nous faisons</span>
+      <h2 class="section-title-xl" id="services-title">Nos services floraux</h2>
+      <p class="section-sub">De la création ponctuelle à l'accompagnement événementiel complet.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2C9 2 7 4.5 7 7c0 3 5 6 5 6s5-3 5-6c0-2.5-2-5-5-5z"/><path d="M7 15v5c0 1.1.9 2 2 2h6a2 2 0 002-2v-5"/><line x1="12" y1="13" x2="12" y2="22"/></svg></span>
+        <h3 class="service-name">Bouquets du jour</h3>
+        <p class="service-desc">Disponibles en boutique chaque matin selon l'arrivage, toujours frais.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 4v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
+        <h3 class="service-name">Livraison express</h3>
+        <p class="service-desc">Livraison en 3h sur Lyon et ses alentours, 7j/7 de 8h a 19h.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 000-7.78z"/></svg></span>
+        <h3 class="service-name">Mariage &amp; evenements</h3>
+        <p class="service-desc">Consultation gratuite, devis personnalise, decoration complete.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none"/><path d="M12 8v8"/><path d="M8 12h8"/><circle cx="12" cy="12" r="10" fill="none"/></svg></span>
+        <h3 class="service-name">Abonnement floral</h3>
+        <p class="service-desc">Un bouquet frais chaque semaine ou chaque mois a domicile.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></span>
+        <h3 class="service-name">Ateliers creatifs</h3>
+        <p class="service-desc">Composez vos propres bouquets lors d'ateliers conviviaux.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ TÉMOIGNAGES ════ -->
+  <section class="section temoignages-section" aria-labelledby="temo-title">
+    <div class="section-center fade-up">
+      <span class="eyebrow">Ils nous font confiance</span>
+      <h2 class="section-title-xl" id="temo-title">Ce que disent<br/>nos clients</h2>
+    </div>
+    <div class="temoignages-grid">
+      <div class="temoignage-card fade-up">
+        <div class="temo-stars" aria-label="5 étoiles">★★★★★</div>
+        <p class="temo-text">« Un bouquet d'une beauté rare. Marianne a su capturer exactement l'ambiance de notre mariage. Nous recommandons les yeux fermés ! »</p>
+        <span class="temo-author">Sophie &amp; Thomas, mariés en juin 2024</span>
+      </div>
+      <div class="temoignage-card fade-up">
+        <div class="temo-stars" aria-label="5 étoiles">★★★★★</div>
+        <p class="temo-text">« Je suis abonnée depuis 6 mois et chaque bouquet est une surprise. La qualité est toujours au rendez-vous, et les fleurs durent longtemps. »</p>
+        <span class="temo-author">Claire M., abonnée hebdomadaire</span>
+      </div>
+      <div class="temoignage-card fade-up">
+        <div class="temo-stars" aria-label="5 étoiles">★★★★★</div>
+        <p class="temo-text">« Livraison rapide et soignée. Le bouquet était encore plus beau qu'en photo. Merci pour ce beau cadeau que j'ai offert à ma mère ! »</p>
+        <span class="temo-author">Antoine D., client régulier</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CTA ════ -->
+  <section class="cta-banner" aria-labelledby="cta-title">
+    <h2 id="cta-title">Prêt(e) à offrir<br/><em style="font-style:italic;">quelque chose d'unique ?</em></h2>
+    <p>Contactez-nous pour une création personnalisée ou commandez directement depuis notre catalogue.</p>
+    <a href="pages/contact.html" class="btn btn-primary">Nous contacter</a>
+  </section>
+
+</main>
+
+<!-- ════ FOOTER ════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo-text">La Fougère</span>
+      <p>Atelier floral artisanal au cœur de Lyon. Fleurs locales, création sur-mesure, amour du vivant depuis 2016.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="pages/catalogue.html">Catalogue</a>
+      <a href="pages/apropos.html">À propos</a>
+      <a href="pages/services.html">Services</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <p>Bouquets du jour</p>
+      <p>Livraison express</p>
+      <p>Mariages &amp; événements</p>
+      <p>Abonnement floral</p>
+      <p>Ateliers créatifs</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>12, rue des Artisans<br/>Lyon 1er</p>
+      <a href="tel:+33555001234">05 55 00 12 34</a>
+      <a href="mailto:bonjour@lafougere-lyon.fr">bonjour@lafougere-lyon.fr</a>
+      <p style="margin-top:8px;">Mar – Sam · 9h – 19h</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 <span>La Fougère</span> – Tous droits réservés</p>
+    <p class="footer-copy">Fait avec soin et beaucoup d'amour a Lyon</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

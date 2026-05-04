@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — La Fougère</title>
+  <meta name="description" content="Contactez La Fougère pour commander un bouquet, organiser votre mariage ou souscrire à un abonnement floral. Lyon 1er, livraison express."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+<header>
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <a href="../index.html" class="nav-logo">
+      <span class="nav-logo-leaf" aria-hidden="true"></span>
+      <span class="nav-logo-text">La Fougère</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+33555001234" class="nav-phone">05 55 00 12 34</a>
+      <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-menu" aria-label="Menu mobile">
+    <a href="../index.html">Accueil</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="apropos.html">À propos</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+33555001234" style="font-size:1rem;font-family:var(--sans);color:var(--sauge);">05 55 00 12 34</a>
+  </nav>
+</header>
+
+<main class="page-content">
+
+  <!-- ════ CONTACT SPLIT ════ -->
+  <section class="contact-section" aria-labelledby="contact-title">
+
+    <!-- Info -->
+    <div class="contact-info">
+      <span class="eyebrow" style="color:var(--sauge);">Nous trouver</span>
+      <h2 class="section-title-xl" id="contact-title">Dites-nous<br/><em style="font-style:italic;color:var(--sauge)">bonjour</em></h2>
+      <p class="section-sub">Nous répondons sous 2h en semaine. Pour les mariages et événements, prévoyez 3 à 6 mois d'avance.</p>
+
+      <div style="margin-top:48px;">
+        <div class="contact-detail-item">
+          <span class="contact-detail-label">Boutique</span>
+          <span class="contact-detail-value">12, rue des Artisans<br/>69001 Lyon</span>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-detail-label">Téléphone</span>
+          <span class="contact-detail-value"><a href="tel:+33555001234">05 55 00 12 34</a></span>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-detail-label">Email</span>
+          <span class="contact-detail-value"><a href="mailto:bonjour@lafougere-lyon.fr">bonjour@lafougere-lyon.fr</a></span>
+        </div>
+        <div class="contact-detail-item">
+          <span class="contact-detail-label">Instagram</span>
+          <span class="contact-detail-value"><a href="#" aria-label="Instagram La Fougère">@lafougere.lyon</a></span>
+        </div>
+      </div>
+
+      <div class="contact-hours">
+        <p class="hours-title">Horaires d'ouverture</p>
+        <div class="hours-row"><span>Lundi</span><span>Fermé</span></div>
+        <div class="hours-row"><span>Mar – Ven</span><span>9h – 19h</span></div>
+        <div class="hours-row"><span>Samedi</span><span>9h – 18h</span></div>
+        <div class="hours-row"><span>Dimanche</span><span>Fermé</span></div>
+      </div>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="contact-form-col">
+      <span class="eyebrow">Écrivez-nous</span>
+      <h2>Votre message</h2>
+
+      <form id="contactForm" novalidate aria-label="Formulaire de contact">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="prenom">Prénom</label>
+            <input id="prenom" class="form-control" type="text" placeholder="Votre prénom" required autocomplete="given-name"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="nom">Nom</label>
+            <input id="nom" class="form-control" type="text" placeholder="Votre nom" required autocomplete="family-name"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input id="email" class="form-control" type="email" placeholder="votre@email.fr" required autocomplete="email"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="telephone">Téléphone (optionnel)</label>
+          <input id="telephone" class="form-control" type="tel" placeholder="06 00 00 00 00" autocomplete="tel"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="sujet">Type de demande</label>
+          <select id="sujet" class="form-control" required>
+            <option value="">Choisissez…</option>
+            <option value="bouquet">Commander un bouquet</option>
+            <option value="mariage">Mariage / événement</option>
+            <option value="abonnement">Abonnement floral</option>
+            <option value="atelier">Atelier créatif</option>
+            <option value="entreprise">Décoration entreprise</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" class="form-control" placeholder="Décrivez votre projet, l'occasion, la date souhaitée…" required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Envoyer le message</button>
+      </form>
+
+      <div id="formSuccess" class="form-success" role="alert" aria-live="polite">
+        <h3>Message recu !</h3>
+        <p>Merci pour votre message. L'équipe de La Fougère vous répondra dans les meilleurs délais (sous 2h en semaine).</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════ MAP PLACEHOLDER ════ -->
+  <div class="map-section" aria-label="Carte de localisation">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,var(--creme) 0%,var(--sable) 100%);"></div>
+    <div class="map-overlay">
+      <p style="font-family:var(--serif);font-size:1.5rem;color:var(--charbon);margin-bottom:20px;position:relative;z-index:1;">
+        12, rue des Artisans, Lyon 1er
+      </p>
+      <a href="https://maps.google.com/?q=Lyon+1er+France" target="_blank" rel="noopener noreferrer">
+        Ouvrir dans Google Maps →
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo-text">La Fougère</span>
+      <p>Atelier floral artisanal au cœur de Lyon. Fleurs locales, création sur-mesure, amour du vivant depuis 2016.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="../index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="apropos.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <p>Bouquets du jour</p>
+      <p>Livraison express</p>
+      <p>Mariages &amp; événements</p>
+      <p>Abonnement floral</p>
+      <p>Ateliers créatifs</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>12, rue des Artisans<br/>Lyon 1er</p>
+      <a href="tel:+33555001234">05 55 00 12 34</a>
+      <a href="mailto:bonjour@lafougere-lyon.fr">bonjour@lafougere-lyon.fr</a>
+      <p style="margin-top:8px;">Mar – Sam · 9h – 19h</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 <span>La Fougère</span> – Tous droits réservés</p>
+    <p class="footer-copy">Fait avec soin et beaucoup d'amour a Lyon</p>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VitriWeb — Votre Vitrine Web Sur-Mesure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Fira+Code:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <span class="loader__logo">VW</span>
+      <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- CURSEUR PERSONNALISÉ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#accueil" class="header__logo">
+        <span class="logo-initials">VW</span>
+        <span class="logo-text">VitriWeb</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Navigation principale">
+        <a href="#accueil" class="nav-link">Accueil</a>
+        <a href="#creations" class="nav-link">Créations</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-cta magnetic">Démarrer un projet</a>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- MENU MOBILE — hors du header pour éviter les bugs de stacking context -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__inner">
+      <span class="mobile-menu__label">Navigation</span>
+      <a href="#accueil" class="mobile-nav-link">Accueil</a>
+      <a href="#creations" class="mobile-nav-link">Créations</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="#contact" class="mobile-nav-link mobile-nav-cta">Démarrer un projet &rarr;</a>
+      <div class="mobile-menu__footer">
+        <a href="mailto:agence.vitriweb@gmail.com">agence.vitriweb@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1 — HERO -->
+  <section class="hero" id="accueil">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+
+    <div class="container">
+      <div class="hero__content">
+
+        <p class="hero__eyebrow hero-anim anim-1">
+          <span class="eyebrow-line"></span>
+          VitriWeb · Sites vitrines sur-mesure
+        </p>
+
+        <h1 class="hero__title hero-anim anim-2">
+          Votre vitrine<br />
+          web sur-mesure.<br />
+          <em>L'ambition VitriWeb.</em>
+        </h1>
+
+        <p class="hero__subtitle hero-anim anim-3">
+          Chez <strong>VitriWeb</strong>, je conçois des sites vitrines haute performance qui transforment vos visiteurs en clients. Vous voulez digitaliser votre commerce&nbsp;? Profitez d'un accompagnement direct, sans intermédiaire, pour un site moderne, rapide et parfaitement adapté à votre image. <strong>Boostons ensemble votre visibilité.</strong>
+        </p>
+
+        <div class="hero__ctas hero-anim anim-4">
+          <a href="#creations" class="btn btn--primary magnetic">Voir mes créations</a>
+          <a href="#contact" class="btn btn--ghost magnetic">Parler de votre projet</a>
+        </div>
+
+        <div class="hero__stats hero-anim anim-5">
+          <div class="stat">
+            <span class="stat__number">Adapté</span>
+            <span class="stat__label">À vos besoins</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat__number">Mobile</span>
+            <span class="stat__label">First & Responsive</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat__number">Rapide</span>
+            <span class="stat__label">Livraison garantie</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual hero-anim anim-3">
+        <div class="hero__card-float">
+          <div class="float-card float-card--main">
+            <div class="float-card__icon">&#10022;</div>
+            <p class="float-card__text">Design unique<br/><strong>&amp; moderne</strong></p>
+          </div>
+          <div class="float-card float-card--secondary">
+            <div class="float-card__badge">VitriWeb</div>
+            <p>Votre site prêt<br/>en un temps record</p>
+          </div>
+          <div class="float-card float-card--accent">
+            <span>100%</span>
+            <p>Sur-mesure selon vos envies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator hero-anim anim-5">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE DIVIDER -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Sites Vitrines</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Engagement Total</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Mobile First</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Performance Web</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Propulsion Digitale</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Sites Vitrines</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Engagement Total</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Mobile First</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Performance Web</span>
+      <span class="marquee-dot">&#10022;</span>
+      <span>Propulsion Digitale</span>
+      <span class="marquee-dot">&#10022;</span>
+    </div>
+  </div>
+
+  <!-- SECTION À PROPOS -->
+  <section class="about" id="about">
+    <div class="container">
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="section-label reveal-up">Mon Histoire</p>
+          <h2 class="section-title reveal-up delay-1">
+            La technique<br/>est là. Il ne me<br/><em>manque que votre projet.</em>
+          </h2>
+        </div>
+
+        <div class="about__narrative">
+          <p class="about__para reveal-up delay-1">
+            Chez <strong>VitriWeb</strong>, je conçois des sites vitrines modernes, rapides et adaptés à tous les écrans. Mes années de formation en informatique m'ont donné les bases solides pour me lancer et vous accompagner avec sérieux.
+          </p>
+          <p class="about__para reveal-up delay-2">
+            Mon objectif n'est pas de vous livrer un site générique, mais de <em>construire quelque chose qui ressemble vraiment à votre activité</em>. Chaque projet est unique, et je m'y investis à fond.
+          </p>
+          <p class="about__para reveal-up delay-3">
+            Ce que vous gagnez en travaillant avec moi&nbsp;: un <strong>site soigné</strong>, un <strong>suivi personnalisé</strong>, et quelqu'un qui a vraiment envie de bien faire. Votre projet mérite d'être bien représenté. <strong>Je suis là pour ça.</strong>
+          </p>
+
+          <div class="about__tags reveal-up delay-4">
+            <span class="tag">Site responsive</span>
+            <span class="tag">Design moderne</span>
+            <span class="tag">Bien référencé</span>
+            <span class="tag">À votre écoute</span>
+            <span class="tag">Sur mesure</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION PORTFOLIO -->
+  <section class="portfolio" id="creations">
+    <div class="container">
+
+      <div class="section-header reveal-up">
+        <p class="section-label">Mes Créations</p>
+        <h2 class="section-title">
+          Ce que je sais faire :<br /><em>Mes Projets Démo.</em>
+        </h2>
+        <p class="section-desc">
+          Pour vous prouver concrètement ce dont je suis capable, j'ai développé de A à Z ces trois sites de démonstration. Ils vous donnent un aperçu réel de mon niveau en design et en code.
+        </p>
+      </div>
+
+      <div class="portfolio__grid">
+
+        <article class="project-card reveal-up delay-1" data-category="Démo · Hôtellerie">
+          <div class="project-card__image">
+            <div class="project-card__preview">
+              <iframe src="site_vitrine/Hotel/vitrine_hotel.html" loading="lazy" title="Apercu Hotel"></iframe>
+            </div>
+            <div class="project-card__badge">Projet Demo</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Palais des Lumieres</h3>
+            <p class="project-card__desc">
+              Site vitrine pour un palace 5 etoiles. Design immersif, galerie photo, presentation des suites et du spa. Experience haut de gamme.
+            </p>
+            <div class="project-card__tech">
+              <span>HTML/CSS</span><span>JS</span><span>Animation</span>
+            </div>
+            <a href="site_vitrine/Hotel/vitrine_hotel.html" class="btn btn--card" target="_blank">Voir la demo <span class="btn-arrow">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-2" data-category="Démo · Restauration">
+          <div class="project-card__image">
+            <div class="project-card__preview">
+              <iframe src="site_vitrine/restaurant/html/index.html" loading="lazy" title="Apercu Restaurant"></iframe>
+            </div>
+            <div class="project-card__badge">Projet Demo</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Maison Noir</h3>
+            <p class="project-card__desc">
+              Site vitrine pour un restaurant gastronomique 2 etoiles Michelin a Paris. Menu, carte des vins, reservation en ligne. Design raffine.
+            </p>
+            <div class="project-card__tech">
+              <span>HTML/CSS</span><span>JS</span><span>UX Design</span>
+            </div>
+            <a href="site_vitrine/restaurant/html/index.html" class="btn btn--card" target="_blank">Voir la demo <span class="btn-arrow">&rarr;</span></a>
+          </div>
+        </article>
+
+        <article class="project-card reveal-up delay-3" data-category="Démo · Commerce Local">
+          <div class="project-card__image">
+            <div class="project-card__preview">
+              <iframe src="site_vitrine/lafougere/index.html" loading="lazy" title="Apercu Fleuriste"></iframe>
+            </div>
+            <div class="project-card__badge">Projet Demo</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">La Fougere</h3>
+            <p class="project-card__desc">
+              Site vitrine pour un fleuriste artisan a Lyon. Catalogue de saison, carte interactive, services et formulaire de contact. Design naturel et soigne.
+            </p>
+            <div class="project-card__tech">
+              <span>HTML/CSS</span><span>JS</span><span>Mobile First</span>
+            </div>
+            <a href="site_vitrine/lafougere/index.html" class="btn btn--card" target="_blank">Voir la demo <span class="btn-arrow">&rarr;</span></a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="portfolio__note reveal-up">
+        &#10022; Ces trois projets sont des démonstrations développées de A à Z pour illustrer mes compétences. Votre site sera lui aussi créé entièrement sur-mesure, selon votre activité et vos objectifs.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SECTION VALEUR AJOUTÉE -->
+  <section class="value" id="valeur">
+    <div class="container">
+      <div class="value__grid">
+
+        <div class="value__intro reveal-up">
+          <p class="section-label">Pourquoi moi ?</p>
+          <h2 class="section-title">
+            Un site vitrine,<br/><em>pas juste un site.</em>
+          </h2>
+        </div>
+
+        <div class="value__items">
+          <div class="value-item reveal-up delay-1">
+            <div class="value-item__icon">&#10022;</div>
+            <h3>On commence par discuter</h3>
+            <p>Avant de coder quoi que ce soit, je prends le temps de comprendre votre activité et vos attentes.</p>
+          </div>
+          <div class="value-item reveal-up delay-2">
+            <div class="value-item__icon">&#10022;</div>
+            <h3>Parfait sur mobile</h3>
+            <p>La majorité de vos clients naviguent sur téléphone. Votre site sera impeccable sur tous les écrans.</p>
+          </div>
+          <div class="value-item reveal-up delay-3">
+            <div class="value-item__icon">&#10022;</div>
+            <h3>Concu pour agir</h3>
+            <p>Chaque page a un but : transformer un visiteur curieux en client convaincu.</p>
+          </div>
+          <div class="value-item reveal-up delay-4">
+            <div class="value-item__icon">&#10022;</div>
+            <h3>Livre rapidement</h3>
+            <p>Pas de délais interminables. Votre site est en ligne en quelques jours, prêt à accueillir vos premiers visiteurs.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__bg-orb"></div>
+    <div class="container">
+
+      <div class="contact__grid">
+
+        <div class="contact__intro reveal-up">
+          <p class="section-label">Travaillons Ensemble</p>
+          <h2 class="contact__title">
+            Donnons vie à<br />votre présence<br /><em>en ligne.</em>
+          </h2>
+          <p class="contact__text">
+            Vous avez un commerce et vous avez besoin d'un site vitrine qualitatif&nbsp;? Je suis disponible, ultra-motivé et prêt à coder pour vous. Envoyez-moi un message pour expliquer votre besoin — je vous répondrai rapidement pour en discuter, sans engagement.
+          </p>
+
+          <div class="contact__direct">
+            <p class="contact__direct-label">Contact direct :</p>
+            <a href="mailto:agence.vitriweb@gmail.com" class="contact__email-link">
+              <span class="contact-icon">&#9993;</span>
+              agence.vitriweb@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__form-wrapper reveal-up delay-2">
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="1da80aa5-e678-44fe-b208-d25d698dbe3f" />
+            <input type="hidden" name="subject" value="Nouveau projet — VitriWeb" />
+            <input type="hidden" name="from_name" value="VitriWeb Contact" />
+            <input type="hidden" name="redirect" value="" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nom">Votre nom</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Jean Dupont"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Adresse email</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jean@monentreprise.fr"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="entreprise">Nom de votre entreprise</label>
+              <input
+                class="form-input"
+                type="text"
+                id="entreprise"
+                name="entreprise"
+                placeholder="Boulangerie Dupont, Hôtel Le Relais..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Parlez-moi de votre projet</label>
+              <textarea
+                class="form-input form-textarea"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Dites-moi qui vous êtes, ce que vous faites et ce que vous attendez d'un site web. Plus c'est précis, mieux je peux vous aider !"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--submit magnetic" id="submitBtn">
+              <span class="btn-text">Envoyer mon projet &#10022;</span>
+              <span class="btn-loading" style="display:none">Envoi en cours...</span>
+            </button>
+
+            <div class="form-success" id="formSuccess" style="display:none">
+              <span class="success-icon">&#10003;</span>
+              Merci ! J'ai bien reçu votre message et je vous répondrai dans les 24h.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="logo-initials">VW</span>
+          <p>VitriWeb — Votre Vitrine Web Sur-Mesure</p>
+        </div>
+        <nav class="footer__nav" aria-label="Navigation pied de page">
+          <a href="#accueil">Accueil</a>
+          <a href="#creations">Créations</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer__copy">
+          &copy; <span id="footerYear"></span> VitriWeb — Fait avec passion &#10022;
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FLOATING CTA -->
+  <div class="mobile-fab" id="mobileFab">
+    <a href="#contact" class="mobile-fab__btn">
+      Démarrer un projet &#10022;
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>À propos — La Fougère</title>
+  <meta name="description" content="Découvrez l'histoire de La Fougère et de Marianne, fleuriste artisan à Lyon depuis 2016. Fleurs locales, zéro pesticide, circuit court."/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css"/>
+  <!-- Leaflet MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.min.css"/>
+</head>
+<body>
+
+<header>
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <a href="../index.html" class="nav-logo">
+      <span class="nav-logo-leaf" aria-hidden="true"></span>
+      <span class="nav-logo-text">La Fougère</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="../index.html">Accueil</a></li>
+      <li><a href="catalogue.html">Catalogue</a></li>
+      <li><a href="apropos.html" class="active">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+33555001234" class="nav-phone">05 55 00 12 34</a>
+      <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-menu" aria-label="Menu mobile">
+    <a href="../index.html">Accueil</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="apropos.html">À propos</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="tel:+33555001234" style="font-size:1rem;font-family:var(--sans);color:var(--sauge);">05 55 00 12 34</a>
+  </nav>
+</header>
+
+<main class="page-content">
+
+  <!-- ════ PAGE HERO ════ -->
+  <div class="page-hero">
+    <span class="eyebrow">Notre histoire</span>
+    <h1>Marianne &amp; les fleurs,<br/><em style="font-style:italic;color:var(--sauge)">une vie de passion</em></h1>
+    <p>Fleuriste certifiée, ancienne botaniste, Marianne a fondé La Fougère avec l'ambition de créer un espace où chaque fleur raconte une histoire.</p>
+  </div>
+
+  <!-- ════ STORY ════ -->
+  <section class="apropos-story" aria-labelledby="story-title">
+    <div class="apropos-gallery">
+      <img
+        src="https://images.unsplash.com/photo-1584461730592-5bfab6460bae?w=900&auto=format&fit=crop&q=80"
+        alt="Marianne dans son atelier"
+        loading="lazy"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?w=500&auto=format&fit=crop&q=80"
+        alt="Fleurs fraiches du matin sur l'etabli"
+        loading="lazy"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1572454591674-2739f30d8c40?w=500&auto=format&fit=crop&q=80"
+        alt="Composition florale artisanale"
+        loading="lazy"
+      />
+    </div>
+    <div class="apropos-story-text fade-up">
+      <span class="eyebrow">2016 – Aujourd'hui</span>
+      <h2 class="section-title-xl" id="story-title">L'atelier du<br/><em style="font-style:italic;color:var(--sauge)">bout de la rue</em></h2>
+      <p>
+        Tout a commencé dans un petit espace de 30m² rue des Artisans, avec quelques seaux de fleurs et une idée simple : offrir à Lyon une fleuristerie qui respire. Pas de plastique, pas d'importation lointaine — juste des fleurs vivantes, cueillies au bon moment.
+      </p>
+      <p>
+        Après un master en botanique et cinq années dans l'horticulture, Marianne a voulu rapprocher les gens des fleurs vraies. Celles qui fanent, qui parfument, qui changent selon les saisons.
+      </p>
+      <p>
+        Aujourd'hui, l'atelier a grandi. L'équipe compte trois fleuristes, tous formés à la composition naturelle. Mais l'esprit reste le même : chaque bouquet est pensé, pas assemblé.
+      </p>
+      <div class="apropos-valeurs">
+        <div class="valeur-item">
+          <span class="valeur-num">8+</span>
+          <span class="valeur-label">Années d'expertise</span>
+          <span class="valeur-desc">Fondée en 2016, une décennie de passion florale</span>
+        </div>
+        <div class="valeur-item">
+          <span class="valeur-num">2 400</span>
+          <span class="valeur-label">Créations livrées</span>
+          <span class="valeur-desc">Des centaines de familles, mariages et entreprises</span>
+        </div>
+        <div class="valeur-item">
+          <span class="valeur-num">12</span>
+          <span class="valeur-label">Producteurs partenaires</span>
+          <span class="valeur-desc">Tous situés à moins de 150 km de Lyon</span>
+        </div>
+        <div class="valeur-item">
+          <span class="valeur-num">0</span>
+          <span class="valeur-label">Pesticide utilisé</span>
+          <span class="valeur-desc">Uniquement des fleurs cultivées naturellement</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ ENGAGEMENTS ════ -->
+  <section class="apropos-engagements" aria-labelledby="engagements-title">
+    <div class="fade-up">
+      <span class="eyebrow">Ce qui nous guide</span>
+      <h2 class="section-title-xl" id="engagements-title">Nos engagements</h2>
+      <p class="section-sub" style="margin:0 auto;">Des valeurs au cœur de chaque création, chaque jour.</p>
+    </div>
+    <div class="engagements-grid">
+      <div class="engagement-item fade-up">
+        <div class="engagement-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12s1-4 4-4 4 4 4 4-1 4-4 4-4-4-4-4z"/></svg></div>
+        <h3 class="engagement-title">Fleurs locales</h3>
+        <p class="engagement-desc">Nous nous approvisionnons exclusivement aupres de producteurs de la region Auvergne-Rhone-Alpes.</p>
+      </div>
+      <div class="engagement-item fade-up">
+        <div class="engagement-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 class="engagement-title">Zero pesticide</h3>
+        <p class="engagement-desc">Tous nos partenaires s'engagent a cultiver sans produits chimiques de synthese.</p>
+      </div>
+      <div class="engagement-item fade-up">
+        <div class="engagement-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+        <h3 class="engagement-title">Emballage eco</h3>
+        <p class="engagement-desc">Papiers kraft, raphia naturel, sachets de graines, rien de plastique dans nos livraisons.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ ÉQUIPE ════ -->
+  <section class="section" style="background:var(--blanc);" aria-labelledby="equipe-title">
+    <div class="section-center fade-up">
+      <span class="eyebrow">L'équipe</span>
+      <h2 class="section-title-xl" id="equipe-title">Les visages<br/><em style="font-style:italic;color:var(--sauge)">de La Fougère</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;max-width:900px;margin:56px auto 0;">
+      <div class="fade-up" style="text-align:center;">
+        <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;margin:0 auto 20px;border:3px solid var(--sable);">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&auto=format&fit=crop&q=80" alt="Marianne Lefèvre" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <h3 style="font-family:var(--serif);font-size:1.3rem;color:var(--noir);margin-bottom:4px;">Marianne Lefèvre</h3>
+        <p style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--sauge);margin-bottom:12px;">Fondatrice &amp; fleuriste principale</p>
+        <p style="font-size:0.83rem;color:var(--gris);line-height:1.8;">Botaniste de formation, fleuriste de cœur. Marianne insuffle l'âme de l'atelier dans chaque création.</p>
+      </div>
+      <div class="fade-up" style="text-align:center;">
+        <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;margin:0 auto 20px;border:3px solid var(--sable);">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&auto=format&fit=crop&q=80" alt="Lucas Martin" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <h3 style="font-family:var(--serif);font-size:1.3rem;color:var(--noir);margin-bottom:4px;">Lucas Martin</h3>
+        <p style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--sauge);margin-bottom:12px;">Fleuriste &amp; livreur</p>
+        <p style="font-size:0.83rem;color:var(--gris);line-height:1.8;">Lucas assure que chaque bouquet arrive en parfait état — avec le sourire et à l'heure.</p>
+      </div>
+      <div class="fade-up" style="text-align:center;">
+        <div style="width:120px;height:120px;border-radius:50%;overflow:hidden;margin:0 auto 20px;border:3px solid var(--sable);">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&auto=format&fit=crop&q=80" alt="Emma Rousseau" loading="lazy" style="width:100%;height:100%;object-fit:cover;"/>
+        </div>
+        <h3 style="font-family:var(--serif);font-size:1.3rem;color:var(--noir);margin-bottom:4px;">Emma Rousseau</h3>
+        <p style="font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--sauge);margin-bottom:12px;">Fleuriste &amp; ateliers</p>
+        <p style="font-size:0.83rem;color:var(--gris);line-height:1.8;">Emma anime nos ateliers créatifs avec pédagogie et bonne humeur. Elle aime transmettre sa passion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CARTE CLIENTS ════ -->
+  <section class="section carte-clients-section" aria-labelledby="carte-title">
+    <div class="section-center fade-up">
+      <span class="eyebrow">Notre territoire</span>
+      <h2 class="section-title-xl" id="carte-title">Où nous sommes,<br/><em style="font-style:italic;color:var(--sauge)">où nous pourrions être</em></h2>
+      <p class="section-sub">Nos clients, partenaires et les zones encore sans fleuriste de proximité — la carte de notre impact à Lyon.</p>
+    </div>
+    <div class="carte-wrapper">
+      <div id="carte-clients"></div>
+    </div>
+  </section>
+
+  <!-- ════ CTA ════ -->
+  <section class="cta-banner">
+    <h2>Venez nous rendre visite<br/><em style="font-style:italic;">dans notre atelier</em></h2>
+    <p>12, rue des Artisans, Lyon 1er — ouvert du mardi au samedi de 9h à 19h.</p>
+    <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <span class="nav-logo-text">La Fougère</span>
+      <p>Atelier floral artisanal au cœur de Lyon. Fleurs locales, création sur-mesure, amour du vivant depuis 2016.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="../index.html">Accueil</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="apropos.html">À propos</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <p>Bouquets du jour</p>
+      <p>Livraison express</p>
+      <p>Mariages &amp; événements</p>
+      <p>Abonnement floral</p>
+      <p>Ateliers créatifs</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>12, rue des Artisans<br/>Lyon 1er</p>
+      <a href="tel:+33555001234">05 55 00 12 34</a>
+      <a href="mailto:bonjour@lafougere-lyon.fr">bonjour@lafougere-lyon.fr</a>
+      <p style="margin-top:8px;">Mar – Sam · 9h – 19h</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 <span>La Fougère</span> – Tous droits réservés</p>
+    <p class="footer-copy">Fait avec soin et beaucoup d'amour a Lyon</p>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+<!-- Leaflet JS -->
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
+<!-- Leaflet MarkerCluster -->
+<script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.min.js"></script>
+<script src="../js/carte.js"></script>
+</body>
+</html>

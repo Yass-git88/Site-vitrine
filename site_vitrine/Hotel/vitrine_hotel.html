@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hôtel Palais des Lumières – Palace 5 Étoiles | Séjour d'Exception</title>
+  <meta name="description" content="Palais des Lumières, palace 5 étoiles d'exception. Suites avec vue panoramique, spa Sisley, restaurant 2 étoiles Michelin. Réservez votre séjour inoubliable."/>
+  <meta name="keywords" content="palace luxe, hôtel 5 étoiles, suite luxe, Palais des Lumières, spa luxe, restaurant étoilé, séjour d'exception"/>
+  <link rel="canonical" href="https://www.palaislumieres.fr/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Palais des Lumières – Palace 5 Étoiles d'Exception"/>
+  <meta property="og:description" content="Palace d'exception au cœur de la ville. Suites avec vue panoramique, restaurant 2 étoiles Michelin, spa Sisley. Réservez en direct."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.palaislumieres.fr/"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop"/>
+  <meta property="og:locale" content="fr_FR"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@200;300;400;600&family=Pinyon+Script&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="vitrine_hotel.css"/>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Hôtel Palais des Lumières",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1200&auto=format&fit=crop",
+    "url": "https://www.palaislumieres.fr",
+    "telephone": "+33144001234",
+    "email": "reservation@palaislumieres.fr",
+    "starRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "priceRange": "$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1, Place Centrale",
+      "addressLocality": "Métropole",
+      "postalCode": "00000",
+      "addressCountry": "FR"
+    },
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Spa & Institut Sisley", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Restaurant 2 étoiles Michelin", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Bar Le Crépuscule", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Conciergerie 24h/24", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Piscine intérieure", "value": true}
+    ],
+    "checkinTime": "15:00",
+    "checkoutTime": "12:00",
+    "numberOfRooms": 87
+  }
+  </script>
+</head>
+<body>
+
+  <!-- CURSEUR -->
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" aria-hidden="true">
+    <span class="sidebar-logo-vert">Palais des Lumières</span>
+    <div class="sidebar-socials">
+      <a href="#">Instagram</a>
+      <div class="sidebar-divider"></div>
+      <a href="#">Facebook</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <!-- NAV DESKTOP -->
+    <nav id="navbar" role="navigation" aria-label="Navigation principale">
+      <ul class="nav-links">
+        <li><a href="#chambres">Chambres</a></li>
+        <li><a href="#preuves">Expériences</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+      </ul>
+      <a href="#accueil" class="nav-center">PALAIS DES LUMIÈRES</a>
+      <div class="nav-right">
+        <a href="tel:+33144001234" class="nav-tel">+33 1 44 00 12 34</a>
+        <a href="#reservation" class="nav-book">M'offrir ce séjour</a>
+      </div>
+    </nav>
+
+    <!-- NAV MOBILE -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="#accueil" class="nav-mobile-logo">PALAIS DES LUMIÈRES</a>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#chambres">Chambres</a>
+      <a href="#preuves">Expériences</a>
+      <a href="#galerie">Galerie</a>
+      <a href="tel:+33144001234">+33 1 44 00 12 34</a>
+      <a href="#reservation" style="color: var(--gold);">M'offrir ce séjour</a>
+    </div>
+
+    <!-- ======= HERO ======= -->
+    <section id="accueil" aria-label="Accueil">
+      <div class="hero-bg" role="img" aria-label="Façade du Palais des Lumières illuminée de nuit"></div>
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+        <div class="hero-label">5 étoiles &nbsp;·&nbsp; Palace &nbsp;·&nbsp; Depuis toujours</div>
+
+        <h1 class="hero-title">
+          <span class="line-static">Le luxe que vous</span>
+          <span class="line-static">n'avez jamais</span>
+          <span class="word-cycle">
+            <span id="word-anim">vécu</span>
+          </span>
+        </h1>
+
+        <p class="hero-problem">
+          "Les hôtels ordinaires vous font dormir. Le nôtre vous fait rêver."
+        </p>
+        <p class="hero-desc">
+          Un palace de caractère où l'élégance intemporelle se fond dans le luxe contemporain — chaque détail pensé pour que vous n'ayez qu'à exister.
+        </p>
+        <div class="hero-actions">
+          <a href="#reservation" class="btn-sable">Choisir ma suite</a>
+          <a href="#plan" class="btn-border">Voir ce qui m'attend</a>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Découvrir</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ======= SECTION PROBLÈME ======= -->
+    <section id="probleme" aria-label="Notre philosophie">
+      <div class="probleme-left">
+        <span class="quote-mark">"</span>
+        <blockquote>
+          Vous méritez mieux qu'un hôtel.<br/>Vous méritez une histoire<br/>dont vous êtes le personnage principal.
+        </blockquote>
+      </div>
+      <div class="probleme-divider"></div>
+      <div class="probleme-right">
+        <p>Le voyage devrait être une parenthèse hors du temps. Pourtant, la plupart des séjours ressemblent à des cases cochées sur une liste — chambre correcte, petit-déjeuner buffet, vue sur la cour intérieure.</p>
+        <p>Au Palais des Lumières, nous avons fait un choix différent : <strong>chaque détail anticipe ce dont vous avez besoin avant même que vous le demandiez.</strong></p>
+        <p>Notre rôle n'est pas de vous accueillir. C'est de vous révéler une expérience que vous n'auriez jamais imaginée seul.</p>
+      </div>
+    </section>
+
+    <!-- ======= PLAN EN 3 ÉTAPES ======= -->
+    <section id="plan" aria-label="Votre séjour en 3 étapes">
+      <div class="plan-header">
+        <span class="section-tag">Le guide</span>
+        <h2 class="section-title">Trois étapes vers <em>l'inoubliable</em></h2>
+        <p class="section-sub" style="margin: 16px auto 0; text-align:center;">Nous avons simplifié chaque moment pour que vous n'ayez qu'à exister.</p>
+      </div>
+      <div class="plan-steps">
+        <div class="plan-step">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Choisissez votre suite</h3>
+          <p class="step-desc">Parlez à notre concierge ou réservez en ligne. En 5 minutes, votre séjour est confirmé.</p>
+        </div>
+        <div class="plan-step">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Arrivez — tout est prêt</h3>
+          <p class="step-desc">Champagne à l'arrivée, butler dédié, température de la chambre réglée à votre convenance. Nous avons pensé à tout.</p>
+        </div>
+        <div class="plan-step">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Vivez l'extraordinaire</h3>
+          <p class="step-desc">Accès privé à des lieux fermés au public, réservations impossibles rendues possibles. Votre séjour, pas celui des brochures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CHAMBRES ======= -->
+    <section id="chambres" aria-label="Nos chambres et suites">
+      <div class="chambres-intro">
+        <div>
+          <span class="section-tag">Hébergement</span>
+          <h2 class="section-title">Des suites conçues pour <em>vous seul</em></h2>
+        </div>
+        <div>
+          <p class="section-sub">Chacune de nos 87 chambres a été pensée comme un appartement privé — mobilier d'époque, matériaux nobles, lumière naturelle sculptée par de grandes baies vitrées.</p>
+        </div>
+      </div>
+      <div class="chambres-grid">
+        <div class="chambre-card featured">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&auto=format&fit=crop" alt="Suite Présidentielle du Palais des Lumières avec vue panoramique" loading="lazy" width="1200" height="800"/>
+          <div class="chambre-overlay">
+            <span class="chambre-cat">Suite</span>
+            <h3 class="chambre-name">Suite Présidentielle</h3>
+            <p class="chambre-price">dès 1 850 € / nuit &nbsp;·&nbsp; Vue panoramique &nbsp;·&nbsp; 120 m²</p>
+            <a href="#reservation" class="chambre-btn">M'accorder cette suite</a>
+          </div>
+        </div>
+        <div class="chambre-card">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&auto=format&fit=crop" alt="Chambre Deluxe avec décoration classique raffinée" loading="lazy" width="600" height="400"/>
+          <div class="chambre-overlay">
+            <span class="chambre-cat">Chambre</span>
+            <h3 class="chambre-name">Chambre Deluxe</h3>
+            <p class="chambre-price">dès 480 € / nuit</p>
+            <a href="#reservation" class="chambre-btn">Choisir cette chambre</a>
+          </div>
+        </div>
+        <div class="chambre-card">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600&auto=format&fit=crop" alt="Junior Suite Jardin avec terrasse privée" loading="lazy" width="600" height="400"/>
+          <div class="chambre-overlay">
+            <span class="chambre-cat">Junior Suite</span>
+            <h3 class="chambre-name">Junior Suite Jardin</h3>
+            <p class="chambre-price">dès 780 € / nuit</p>
+            <a href="#reservation" class="chambre-btn">Choisir cette suite</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= SERVICES ======= -->
+    <section id="services" aria-label="Nos services et prestations">
+      <div class="services-img-col">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=900&auto=format&fit=crop" alt="Spa intérieur du Palais des Lumières avec piscine et colonnes en pierre" loading="lazy" width="900" height="600"/>
+      </div>
+      <div>
+        <span class="section-tag">Prestations</span>
+        <h2 class="section-title">Chaque détail <em>anticipé</em></h2>
+        <p class="section-sub" style="margin-bottom:40px;">Du spa aux tables étoilées, rien n'a été laissé au hasard — pour que vous n'ayez qu'à vous laisser porter.</p>
+        <div class="services-list">
+          <div class="service-item">
+            <span class="service-num">01</span>
+            <div class="service-info">
+              <h3>Spa &amp; Institut Sisley</h3>
+              <p>1 200 m² dédiés au silence. Piscine intérieure chauffée, hammam en marbre, soins Sisley sur mesure.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <span class="service-num">02</span>
+            <div class="service-info">
+              <h3>Restaurant L'Atrium — 2 étoiles Michelin</h3>
+              <p>Cuisine française contemporaine, 15 000 bouteilles en cave. Une table que vous n'oublierez pas.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <span class="service-num">03</span>
+            <div class="service-info">
+              <h3>Conciergerie d'exception</h3>
+              <p>Transferts privés, accès à des lieux fermés au public, butler disponible 24h/24. Demandez l'impossible.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <span class="service-num">04</span>
+            <div class="service-info">
+              <h3>Bar Le Crépuscule</h3>
+              <p>Cocktails signatures en terrasse avec vue panoramique. Jazz live le vendredi — la ville à vos pieds.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <span class="service-num">05</span>
+            <div class="service-info">
+              <h3>Fitness &amp; Rooftop</h3>
+              <p>Équipements Technogym, coaching personnalisé, vue panoramique sur les toits de la ville.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= PREUVE SOCIALE — LIVRE D'OR ======= -->
+    <section id="preuves" aria-label="Témoignages de nos hôtes">
+      <div class="preuves-header">
+        <span class="section-tag" style="justify-content:center;">
+          <span style="display:inline-flex;align-items:center;gap:12px;">Expériences vécues</span>
+        </span>
+        <h2 class="section-title">Ce que <em>nos hôtes</em> emportent avec eux</h2>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-num">312</span>
+          <span class="stat-label">bouteilles de Krug<br/>ouvertes en 2024</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">67%</span>
+          <span class="stat-label">de nos hôtes<br/>reviennent dans l'année</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">1 / 8</span>
+          <span class="stat-label">un concierge<br/>pour huit chambres</span>
+        </div>
+      </div>
+
+      <div class="livredoor-title">Le Livre d'Or</div>
+
+      <!-- Marquee ligne 1 — vers la gauche -->
+      <div class="avis-marquee" aria-label="Avis de nos hôtes défilants">
+        <div class="avis-track avis-track--left">
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"Pour notre anniversaire de mariage, nous voulions quelque chose d'exceptionnel. Nous avons trouvé quelque chose d'inoubliable. Le butler avait disposé des roses de notre couleur préférée — sans que nous l'ayons demandé."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Marie-Claire D.</div>
+              <span class="avis-meta">Suite Présidentielle · 4 nuits</span>
+            </div>
+          </div>
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"J'ai séjourné dans les meilleurs hôtels du monde. Ici, c'est différent — on ne vous sert pas, on vous connaît. Dès la deuxième nuit, le concierge se souvenait que je prenais mon café sans sucre."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Jonathan H.</div>
+              <span class="avis-meta">Junior Suite Jardin · 6 nuits</span>
+            </div>
+          </div>
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"Le spa à lui seul vaut le séjour. Deux heures de soin Sisley, un hammam en marbre et ce silence… On oublie tout. Je n'ai jamais aussi bien dormi qu'ici."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Laura K.</div>
+              <span class="avis-meta">Chambre Deluxe · 2 nuits</span>
+            </div>
+          </div>
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"Un lieu hors du temps. Le concierge nous a organisé un dîner privé dans un endroit fermé au public. Ce genre de choses ne s'achète pas — ça se mérite. Et ici, on vous l'offre."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Alessandro R.</div>
+              <span class="avis-meta">Suite Présidentielle · 5 nuits</span>
+            </div>
+          </div>
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"Ma fille m'a dit : 'Maman, on peut habiter ici ?' Je crois que ça résume tout. Le petit-déjeuner en chambre, les draps, la lumière du matin… Chaque détail est pensé."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Sophie M.</div>
+              <span class="avis-meta">Junior Suite Jardin · 3 nuits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marquee ligne 2 — vers la droite -->
+      <div class="avis-marquee">
+        <div class="avis-track avis-track--right">
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"Je cherchais à m'offrir un moment. J'ai trouvé une version de moi-même que j'avais oubliée. Le dîner à L'Atrium, la terrasse au coucher du soleil, le silence absolu de la chambre — tout était parfait."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Isabelle M.</div>
+              <span class="avis-meta">Chambre Deluxe · 3 nuits</span>
+            </div>
+          </div>
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"Troisième séjour ici. À chaque fois, ils se souviennent de tout : mon champagne préféré, la température de ma chambre, le journal du matin. Ce n'est plus un hôtel, c'est chez moi."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Marc-Antoine B.</div>
+              <span class="avis-meta">Chambre Deluxe · 7 nuits</span>
+            </div>
+          </div>
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"Le bar Le Crépuscule au coucher du soleil. Un Old Fashioned parfait, du jazz en fond, la ville qui s'illumine. Certains moments restent gravés — celui-ci en fait partie."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Elena V.</div>
+              <span class="avis-meta">Suite Présidentielle · 2 nuits</span>
+            </div>
+          </div>
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"Voyageur d'affaires 200 nuits par an. Je connais tous les palaces. Ici, la différence c'est l'humain. On ne récite pas un script, on vous écoute vraiment."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">David L.</div>
+              <span class="avis-meta">Chambre Deluxe · 12 nuits</span>
+            </div>
+          </div>
+          <div class="avis-card">
+            <div class="avis-stars">★★★★★</div>
+            <p class="avis-text">"On m'avait dit que c'était le meilleur hôtel qu'ils avaient connu. Je pensais que c'était exagéré. Ce n'était pas exagéré. C'était en dessous de la réalité."</p>
+            <div class="avis-bottom">
+              <div class="avis-sig">Nadia F.</div>
+              <span class="avis-meta">Junior Suite Jardin · 4 nuits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="illustres">
+        <p>Depuis l'ouverture, des personnalités du monde entier ont choisi <em>le silence de nos suites</em>.<br/>Nous respectons leur discrétion. Ils respectent notre adresse.</p>
+      </div>
+    </section>
+
+    <!-- ======= GALERIE ======= -->
+    <section id="galerie" aria-label="Galerie photo">
+      <div class="galerie-header">
+        <span class="section-tag">Galerie</span>
+        <h2 class="section-title">Voir ce qui <em>vous attend</em></h2>
+        <p class="section-sub">Chaque image est une promesse. Nous la tenons.</p>
+      </div>
+      <div class="galerie-masonry">
+        <div class="g-item"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&auto=format&fit=crop" alt="Grand hall d'entrée avec lustres en cristal et sol en marbre" loading="lazy" width="600" height="400"/></div>
+        <div class="g-item"><img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=600&auto=format&fit=crop" alt="Piscine intérieure du spa avec voûtes en pierre" loading="lazy" width="600" height="800"/></div>
+        <div class="g-item"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&auto=format&fit=crop" alt="Restaurant L'Atrium, table dressée pour un dîner gastronomique" loading="lazy" width="600" height="400"/></div>
+        <div class="g-item"><img src="https://images.unsplash.com/photo-1551918120-9739cb430c6d?w=600&auto=format&fit=crop" alt="Suite avec vue sur les toits de la ville au crépuscule" loading="lazy" width="600" height="400"/></div>
+        <div class="g-item"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&auto=format&fit=crop" alt="Bar Le Crépuscule, cocktails signatures avec vue panoramique" loading="lazy" width="600" height="400"/></div>
+      </div>
+    </section>
+
+    <!-- ======= RÉSERVATION ======= -->
+    <section id="reservation" aria-label="Réserver votre séjour">
+      <div class="resa-container">
+        <div>
+          <span class="section-tag">Réservation</span>
+          <h2 class="section-title">Commencer <em>mon séjour</em></h2>
+          <p class="section-sub">Réservez en direct pour le meilleur tarif garanti — et parce que certaines attentions ne s'offrent qu'aux hôtes qui nous choisissent directement.</p>
+          <div class="resa-features">
+            <div class="resa-feature">
+              <span class="resa-feature-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1l1.85 3.75L14 5.55l-3 2.92.71 4.13L8 10.35l-3.71 2.25.71-4.13L2 5.55l4.15-.8L8 1z" fill="#b89a5e"/></svg>
+              </span>
+              <div class="resa-feature-text">
+                <h4>Meilleur tarif garanti</h4>
+                <p>Aucun intermédiaire. Aucun frais caché. Le prix juste, directement.</p>
+              </div>
+            </div>
+            <div class="resa-feature">
+              <span class="resa-feature-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6.5 11 3 7.5" stroke="#b89a5e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div class="resa-feature-text">
+                <h4>Annulation sans stress</h4>
+                <p>Changement de plans ? Modifiez ou annulez jusqu'à 48h avant l'arrivée.</p>
+              </div>
+            </div>
+            <div class="resa-feature">
+              <span class="resa-feature-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2a3 3 0 100 6 3 3 0 000-6zm0 8c-3.33 0-5 1.67-5 2.5V14h10v-1.5C13 11.67 11.33 10 8 10z" fill="#b89a5e"/></svg>
+              </span>
+              <div class="resa-feature-text">
+                <h4>Welcome gift exclusif</h4>
+                <p>Champagne Krug et mignardises maison à votre arrivée. Offert.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="resa-form" id="resaForm" novalidate>
+          <div class="form-group">
+            <label for="resa-arrivee">Arrivée</label>
+            <input type="date" id="resa-arrivee" required autocomplete="off"/>
+          </div>
+          <div class="form-group">
+            <label for="resa-depart">Départ</label>
+            <input type="date" id="resa-depart" required autocomplete="off"/>
+          </div>
+          <div class="form-group">
+            <label for="resa-adultes">Adultes</label>
+            <select id="resa-adultes"><option>1</option><option selected>2</option><option>3</option><option>4</option></select>
+          </div>
+          <div class="form-group">
+            <label for="resa-enfants">Enfants</label>
+            <select id="resa-enfants"><option>0</option><option>1</option><option>2</option></select>
+          </div>
+          <div class="form-group full">
+            <label for="resa-chambre">Type de chambre</label>
+            <select id="resa-chambre">
+              <option>Chambre Supérieure (dès 320 €)</option>
+              <option>Chambre Deluxe (dès 480 €)</option>
+              <option>Junior Suite Jardin (dès 780 €)</option>
+              <option>Suite Présidentielle (dès 1 850 €)</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="resa-nom">Prénom &amp; Nom</label>
+            <input type="text" id="resa-nom" placeholder="Jean Dupont" required autocomplete="name"/>
+          </div>
+          <div class="form-group full">
+            <label for="resa-email">Adresse e-mail</label>
+            <input type="email" id="resa-email" placeholder="jean@exemple.fr" required autocomplete="email"/>
+          </div>
+          <button type="submit" class="resa-submit">Vérifier mes disponibilités</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ======= CONTACT ======= -->
+    <section id="contact" aria-label="Coordonnées et contact">
+      <div class="contact-col">
+        <h3>Adresse</h3>
+        <address>
+          <p>1, Place Centrale<br/>Centre-ville, France</p>
+          <p style="margin-top:16px;font-size:0.75rem;color:rgba(138,154,168,0.4);">Accès direct en transports en commun</p>
+        </address>
+      </div>
+      <div class="contact-col">
+        <h3>Horaires &amp; Accueil</h3>
+        <p>Réception 24h/24 – 7j/7</p>
+        <p>Check-in : dès 15h00</p>
+        <p>Check-out : jusqu'à 12h00</p>
+      </div>
+      <div class="contact-col">
+        <h3>Parler à notre concierge</h3>
+        <a href="tel:+33144001234">+33 (0)1 44 00 12 34</a>
+        <a href="mailto:reservation@palaislumieres.fr">reservation@palaislumieres.fr</a>
+        <a href="mailto:events@palaislumieres.fr">events@palaislumieres.fr</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 <span>Hôtel Palais des Lumières</span> &nbsp;·&nbsp; Palace 5 étoiles &nbsp;·&nbsp; Membre Relais &amp; Châteaux</p>
+    </footer>
+
+  </div>
+
+  <div class="toast" id="toast" role="alert">Merci — notre concierge vous contactera sous 24h.</div>
+
+  <script src="vitrine_hotel.js"></script>
+</body>
+</html>
